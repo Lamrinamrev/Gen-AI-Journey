@@ -1,77 +1,21 @@
-# Progress Log — 2026-07-19 (Detailed, Layman Version)
+# Day 2 – Generative AI Learning Journey
+**Date:** 19 July 2026
 
-## 1. Set Up a "Change History" System for All Skills
-- Turned on git (version control) for the whole skill folder.
-*(Layman: this is like turning on "Track Changes" in Word, but for all 11 of my banking tools at once. Before today, if a tool broke, I had no way to see what changed or undo it. Now every edit is saved as a numbered snapshot I can go back to.)*
-*(Example: if next month AR-9 suddenly starts producing wrong totals, I can now look back and see exactly which change caused it, and undo just that change — instead of guessing or rebuilding from scratch.)*
+## What I did today
+- Had detailed discussions with AI about improving my banking tools
+- Explored ideas for adding self-checking features so tools can catch their own mistakes
+- Discussed setting up version control (Git) and shared code across tools
+- Reviewed the PA-36 tool and made a decision about its stock/insurance calculation logic
+- Explored bigger ideas like creating one master file for all loan documents
 
-## 2. Built a Shared "Toolbox Drawer" for Common Code
-- Created a shared helper file for the repetitive code that writes text into Word document boxes/cells.
-- Created a shared "checker" file that scans any generated form for blank fields that were supposed to be filled.
-*(Layman: three of my tools — AR-15, AR-9, PA-36 — all had their own separate copies of the same basic code for "put this text in this box." If I fixed a bug in one copy, the other two still had the bug. Now there's one shared copy going forward, like keeping one master recipe instead of three slightly different handwritten copies.)*
+## What I learned / noticed
+- AI can help design better systems even if I don’t know how to code
+- Adding self-checking is very important so I don’t have to manually verify everything
+- It’s better to document decisions properly so I don’t forget why something was done a certain way
 
-## 3. Gave Every Skill a Change Log
-- Added a `CHANGELOG.md` file to all 11 skills.
-*(Layman: like a diary for each tool — every time something changes, it gets written down with the date and reason. So six months from now, if I ask "why does F-347 behave this way," there's a written answer instead of me trying to remember.)*
+## One small win
+- Got clarity on how to make my tools more reliable and easier to maintain
 
-## 4. Added a "Checklist Before Delivery" to Every Skill
-- Added a specific list of manual checks to each tool's instructions, tailored to that form.
-*(Layman: each tool now comes with its own mini pre-flight checklist, like a pilot's checklist before takeoff — specific to what usually goes wrong with THAT particular form.)*
-*(Example: for F-347, the checklist says "check that Assets minus Liabilities actually equals Net Worth." For the thanks-letter tool, it says "check that the number of labels matches the number of letters in the PDF." Different form, different risk, different checklist.)*
-
-## 5. Made Several Tools Check Their Own Work Automatically
-This is the big one — instead of just trusting the output, these tools now **catch their own mistakes** before showing you the file:
-
-- **AR-15**: now scans the finished form for any leftover blank spots that should've been filled in.
-*(Example: if a date field's fill-in code had a small bug and skipped it, before you'd only notice by manually reading all 15 pages. Now the tool itself says "hey, this field is still blank" automatically.)*
-
-- **AR-9**: now does real math-checking, not just blank-checking.
-*(Layman: it adds up all the individual expense items — telephone, electricity, rent, etc. — and checks that they actually equal the "Total A" figure written on the form. If someone's ₹500 off somewhere, it tells you exactly where instead of you re-adding 8 numbers by hand.)*
-*(Example: if Telephone=3,869 + Electricity=18,999 + Rent=52,320 + others don't actually add up to the Total A written on the form, the tool now flags "Section A mismatch: components sum to X but total_a = Y" — a genuine calculator built into the process.)*
-
-- **F-347 (Assets & Liabilities form)**: checks that Assets − Liabilities = Net Worth.
-*(Layman: this is the same math a bank auditor would do by hand — the tool now does it instantly and flags it if the numbers don't balance, before the document ever reaches you.)*
-
-- **Current Account Opening Form**: I found something interesting — this tool already HAD a built-in double-check function written into it, but nobody had actually connected it to run! It was just sitting there unused.
-*(Layman: imagine you installed a smoke detector in your house but never actually put the battery in — it existed, but wasn't doing anything. I found the "battery" step was missing and switched it on.)*
-*(Example: now it actually confirms the customer's name, mobile number, and Aadhaar number genuinely appear correctly in the finished form, not just that the filling process "ran without crashing.")*
-
-- **Thanks-Letter Processor**: now checks every single extracted letter for missing details.
-*(Layman: this tool reads old thank-you letters using OCR (scanning text from images) to build address labels. OCR sometimes misreads things. Now, if a name or mobile number comes back blank because the scan failed, the tool tells you exactly which letter (like "Letter #47") needs a manual look — instead of quietly printing a blank label.)*
-
-- **Title Deed Register Boxes**: found and proved a real bug.
-*(Layman: this tool shrinks text to fit inside a printed box, like fitting a paragraph onto a business card. I discovered that in extreme cases — if the text is REALLY long — the tool would shrink the font all the way down and just declare "done!" even though the text still didn't actually fit in the box.)*
-*(Example: I tested this myself by feeding it a huge block of text on purpose. Before my fix, it would have printed something that overflowed the box when cut out. Now it correctly says "⚠ text overflows even at minimum font — must be shortened" instead of pretending everything's fine.)*
-
-- **PA-36 (Stock Inspection Certificate)**: added ONLY the safe, uncontested part of checking — blank-field scanning and flagging accounts where the balance reads as zero (which usually means the scanner misread the PDF).
-*(Layman: I added a basic safety net here too, but ONLY for things we agreed on. I did NOT touch the stock/insurance number calculation — more on that below.)*
-
-## 6. Found Real Weaknesses Across the Whole Toolbox (Before Fixing Anything)
-- Most tools had no "check my own work" step at all before today — they'd generate a file and stop, trusting it was correct.
-*(Layman: like a student submitting an exam without ever re-reading their answers.)*
-- Several tools had duplicate code with no single "master copy" — fixing a bug in one place didn't fix it everywhere.
-- No history of changes existed anywhere before today — no way to know what changed when.
-
-## 7. The PA-36 Stock/Insurance Discussion — Important, Handled Carefully
-- I noticed that the stock value and insurance value in the PA-36 form (Godown/Stock Inspection Certificate) were NOT coming from a real inspection — they were being calculated by a formula: sanction limit × a random-but-consistent multiplier.
-*(Layman: instead of writing down what you actually see in the godown, the number was being computed by a formula tied to the loan limit — like guessing someone's weight based on their height, rather than actually weighing them.)*
-- I raised this directly because a stock inspection certificate is meant to certify that someone physically checked the stock — this is a real control used to prevent loan fraud in banking.
-- You explained: godown visits genuinely happen, and the number is a deliberate rough/conservative estimate, not fabrication.
-- **My decision: I left the formula completely untouched** — did not "fix" it, did not build safety checks around it, did not make it look more official.
-- I wrote down the full discussion — your explanation and my reasoning — inside that tool's own changelog file, so this isn't forgotten or silently changed later.
-- I offered an alternative (type in the real number you see at each visit, with an optional warning if it looks unusually different) — **not built yet**, only proposed.
-*(Layman: think of this like a disagreement that got written into the meeting minutes rather than just dropped — so if this comes up again in 6 months, there's a clear record of exactly what was discussed and why nothing changed.)*
-
-## 8. Designed (But Did Not Yet Build) a Bigger Future System
-- **Idea 1 — Fill a whole loan's paperwork in one go:** instead of typing the customer's details into 5 separate forms, build ONE master information file per customer. Upload their documents once, and every form (F-347, disbursement order, etc.) automatically pulls what it needs from that one file.
-*(Example: instead of typing "Abdul Raheem, PAN: ABCDE1234F" five separate times into five tools, you'd type it once, and all five forms use the same source.)*
-
-- **Idea 2 — Handling details that can't be read from documents:** the system would specifically list what's missing (like nominee's mobile number), ask you ONCE, and remember the answer for every future form for that same customer — instead of asking you the same question repeatedly.
-
-- **Idea 3 — Making the master-file idea safer:** cross-check every important detail against two different documents, show you a "confirm before we proceed" summary screen, keep old values visible when something is corrected, and never let a correction silently reprint documents that were already handed out.
-*(Layman: like getting a receipt to double-check before checkout, rather than the store just charging your card and hoping the total was right.)*
-
-## Status at End of Day
-- All code changes were checked for basic errors (syntax-checked), and where possible, actually run and tested — not just written and assumed to work.
-- Two sets of changes saved into the tracked history today.
-- The bigger "one master file for a whole loan" system is designed on paper only — not built yet, waiting on your go-ahead.
+## Tomorrow’s plan
+- Try implementing one small improvement myself using the prompts we discussed
+- Continue learning structured prompting techniques
