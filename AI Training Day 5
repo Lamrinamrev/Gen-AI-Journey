@@ -1,0 +1,21 @@
+# Day 5 – Generative AI Learning Journey
+**Date:** 20 July 2026
+
+## What I did today
+- Improved the F-347 filling skill using ReAct reasoning
+- Added logic to properly handle TOTAL rows (blank them and populate computed subtotals)
+- Fixed field mapping bugs in B.7 and B.9 sections
+- Designed a complete TV reduction plan for my 6-year-old daughter (with solo play ideas and book integration)
+- Prepared workflow for filling two conditional Word documents (Income Declaration and Present Address Re-declaration)
+
+## What I learned
+- ReAct reasoning helps make tool logic more reliable and transparent
+- Combining parenting strategies with the 8-Layer framework produces practical results
+- Small mapping bugs can break important calculations — careful testing is essential
+
+## One small win
+- Successfully fixed TOTAL row behavior in F-347 and made the tool more accurate
+
+## Tomorrow’s focus
+- Test the updated F-347 skill with real data
+- Continue improving prompting and documentation habits
