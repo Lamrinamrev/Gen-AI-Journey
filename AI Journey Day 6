@@ -1,0 +1,22 @@
+# Day 6 – Generative AI Learning Journey
+**Date:** 21 July 2026
+
+## What I did today
+- Compared two versions of the F-347 skill and identified which parts were stronger
+- Integrated the system-centric Regulatory Form Filling Framework (v3) into the live F-347 skill
+- Fixed a real classification error (Guarantor accounts from CIBIL were being treated as direct liabilities instead of going into A.12)
+- Updated the skill with mandatory Identity Resolution, Evidence Mapping, Consistency Validation, and three-part output (Form + Validation Summary + Assumptions)
+- Filled a complete F-347 for a real applicant (Ankur Agarwal) using the improved skill
+
+## What I learned
+- Forms should be the last step, not the starting point
+- Identity resolution and evidence mapping must happen before any figure is entered
+- CIBIL ownership field (Individual/Joint vs Guarantor) is critical for correct table routing
+- Having two parallel skills for the same form creates confusion and must be reconciled
+
+## One small win
+- Successfully corrected the Guarantor vs Liability logic and saved it as permanent rule in the skill
+
+## Tomorrow’s focus
+- Fully reconcile the two F-347 skills into one canonical version
+- Test the updated skill on a fresh case from start to finish without mid-way corrections
