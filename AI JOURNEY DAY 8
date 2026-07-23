@@ -1,0 +1,23 @@
+# Day 8 – Generative AI Learning Journey
+**Date:** 23 July 2026
+
+## What I did today
+- Ran the F-347 skill for Naveen Kumar and cleaned all hedging/sourcing language from the form
+- Updated the live skill with 5 permanent rules:
+  1. Whole document is customer-declaration voice only
+  2. “To be furnished” is banned — ask instead
+  3. For 44AD applicants, Gross Income = Net Income, Expenses = Nil
+  4. Table 21 (remarks) stays blank unless officer dictates text
+  5. Example data flagged as outdated so it doesn’t re-teach old habits
+- Extracted solar panel details from uploaded documents and correctly flagged conflicts (manufacturer and price)
+
+## What I learned
+- Declaration forms must contain no hedging language at all
+- Conflicting source documents must be reported, not silently resolved
+- Permanent skill updates are more valuable than one-time fixes
+
+## One small win
+- Successfully enforced pure customer-declaration voice across the entire F-347
+
+## Tomorrow’s focus
+- One clean end-to-end F-347 with full visual PDF check and no mid-way corrections
