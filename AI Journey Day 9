@@ -1,0 +1,22 @@
+# Day 9 – Generative AI Learning Journey
+**Date:** 24 July 2026
+
+## What I did today
+- Verified that the F568A Business Loans DOCX matches the official PDF boilerplate (excluding customer-specific fields)
+- Cleaned leftover dates from the template and added a QA comment for sanction date vs letter date
+- Built and refined the F568 skill prompt using the 8-point framework
+- Locked a hard rule: always fill the exact master F568A template by editing in place — never regenerate the document
+- Filled IOB Credit Card Application for Udit Narayan Singh from uploaded documents
+- Added officer details (Nirmal Singh, Roll No. 58589, Asst. Manager) to the form
+
+## What I learned
+- Credit Sanction Advice is a high-stakes legal document — template fidelity is non-negotiable
+- The master template must always win over any prompt description if there is a conflict
+- Customer-specific data and boilerplate must be strictly separated during comparison and filling
+- Visual page-by-page checks remain essential even when text extraction looks clean
+
+## One small win
+- Successfully locked the “use exact master template only” rule for F568A
+
+## Tomorrow’s focus
+- One clean end-to-end fill of F568A using the locked master template and full visual check
