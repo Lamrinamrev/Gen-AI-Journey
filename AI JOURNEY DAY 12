@@ -1,0 +1,25 @@
+# Day 12 – Generative AI Learning Journey
+**Date:** 27 July 2026
+
+## What I did today
+- Reviewed a bakery DPR and cross-checked machinery prices against live market sources
+- Built a case-specific authenticity-check framework, then a generic DPR analysis metaprompt
+- Critiqued the framework and upgraded it to v2 (promoter check, vendor authenticity, outlier handling, severity, residual risk)
+- Applied v2 to the Rajneesh Bebni DPR and produced a structured Word review
+- Drafted professional bank mails for a GST/account identity-theft complaint (branch reply + RO escalation)
+- Created a printable A4 landscape class timetable PDF
+- Reviewed HRO/aviation-style reliability ideas for strengthening regulatory frameworks
+
+## What I learned
+- Every quoted asset must pass both price plausibility and process relevance
+- A milk analyzer in a bakery DPR is a process mismatch, not just a price issue
+- Generic frameworks must start with sector identification, then apply sector-specific checks
+- Self-critique before locking a framework improves quality more than polishing prose
+- Professional bank correspondence should state what was already checked and what access is still needed
+
+## One small win
+- Produced a reusable DPR analysis metaprompt and applied it successfully to a real case
+
+## Tomorrow’s focus
+- Lock DPR v2 as a usable skill/checklist and test it on one more real DPR
+- Avoid opening a new abstraction layer until v2 has been used on 2–3 live cases
