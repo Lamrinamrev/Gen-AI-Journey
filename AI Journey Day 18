@@ -1,1 +1,24 @@
 
+# Day 18 – Generative AI Learning Journey
+**Date:** 02 August 2026
+
+## What I did today
+- Summarized the full arc from real banking problems to reusable AI skills
+- Restated the DPR authenticity framework journey (case → generic → critique → v2)
+- Clarified GitHub as a structured project system (repository, folders, commits, branches)
+- Documented the IOB F-347 skill design: original template only, SKILL.md rules, fill script, zero-hallucination discipline
+- Confirmed the safety model: main = trusted version, working = improvement laboratory
+- Identified the next gap: controlled test cases before further feature changes
+
+## What I learned
+- A banking skill is not just a script; it stores judgment and checking discipline
+- Recreating official forms destroys fidelity; editing the real template preserves it
+- GitHub’s main value for me is controlled change and rollback, not advanced coding
+- Testing discipline is now more important than adding new features
+
+## One small win
+- Produced a clear, honest status of the F-347 project and its real next step
+
+## Tomorrow’s focus
+- Create 3–6 controlled test cases for F-347 (salaried, proprietor, student/guarantor, multi-CIBIL, missing data)
+- Do not add new features until at least one test case has a known expected output
