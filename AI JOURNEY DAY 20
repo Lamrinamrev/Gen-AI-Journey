@@ -1,0 +1,27 @@
+# Day 20 – Generative AI Learning Journey
+**Date:** 04 August 2026
+
+## What I did today
+- Worked on IOB Credit Sanction Advice (F568/F568A) as a skill candidate
+- Transferred logo and header from F568A Business template into F568 Retail template
+- Filled Raghav Agarwal education-loan sanction advice from source documents only
+- Treated Ankur Agarwal as co-obligant (not guarantor); marked guarantees Not Applicable
+- Corrected signature blocks: Nirmal Singh = Manager II Line; Yatendra Kumar = Branch Head
+- Filled Place = Kotdwar, Date = 04/08/2026, Margin = 5%
+- Built pixel-faithful Word replicas of education-loan document set with amount updates
+- Wrote and froze HRR Chapter 3 — Core Principles (10 principles) as Version 1.0
+
+## What I learned
+- Legal bank documents must preserve inapplicable-clause discipline (score-off, not silent rewrite)
+- Co-obligant and guarantor must never be mixed
+- Missing fields should stay blank and be flagged, not guessed
+- Core principles become usable only when written as mandatory requirements with examples and conformance tests
+- Freezing a chapter prevents endless rewriting of the same foundation
+
+## One small win
+- Completed a real education-loan F568 fill and froze HRR Core Principles in the same day
+
+## Tomorrow’s focus
+- Either lock the F568 skill with one more live case and visual check
+- Or write only HRR Chapter 4 (Credo) under the frozen structure
+- Do not open a third track
