@@ -1,0 +1,24 @@
+# Day 21 – Generative AI Learning Journey
+**Date:** 05 August 2026
+
+## What I did today
+- Built a pixel-perfect Word replica of the Niva Bupa Health Plus Enrolment Form (6 pages)
+- Filled Health Plus form for Brijesh Chandra from Finacle screenshot and Aadhaar (source-only)
+- Filled F568 Retail Education Loan Sanction Advice for Raghav Agarwal using skill rules and source documents
+- Wrote and formatted HRR Chapter 4 — The HRR Credo (20 commitments, Oath, ethical commitments, conformance questions)
+- Closed the earlier TV taper plan loop
+
+## What I learned
+- Letter-box (one-cell-per-character) forms need careful box-count verification
+- Co-obligant vs guarantor must be handled explicitly on retail sanction templates
+- Missing fields should stay blank and be listed as outstanding, not filled by inference
+- Completing Part A (philosophy → principles → credo) creates a stable foundation for the rest of HRR
+- Closing old loops matters as much as opening new work
+
+## One small win
+- Completed HRR Part A (Chapters 1–4) and delivered two real filled banking/insurance forms in the same day
+
+## Tomorrow’s focus
+- Either freeze F568 skill after one more live case
+- Or start only HRR Part B Chapter 5 (Systems Thinking)
+- Do not open a third domain
